@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'fraunces';
+    src: url(Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+@font-face {
+    font-family: 'montserrat';
+    src: url(Montserrat/static/Montserrat-Regular.ttf);
+}
+body{
+    background-color: hsl(30, 38%, 92%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+div#main{
+    height: auto;
+    width: 564px;
+    border-radius: 12px;
+    background-color: hsl(0, 0%, 100%);
+}
+div#whole{
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section#left, div{
+    width: 50%;
+    height: 100%;
+    border-radius: 12px 0px 0px 12px;
+    align-items: center;
+    background-image: url(images/image-product-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+section#right{
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    height: 100%;
+    border-radius: 0px 12px 12px 0px;
+    padding: 10px 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+h3{
+    color: hsl(0, 0%, 57%);
+    letter-spacing: 4px;
+    font-weight: 600;
+    font-family: 'montserrat';
+    font-size: 13px;
+}
+b{
+    font-size: 34px;
+    font-family: 'fraunces';
+}
+p{
+    color: hsl(0, 0%, 57%);
+    font-family: 'montserrat';
+    font-size: 13px;
+}
+div#numbers{
+    font-family: 'fraunces';
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 18px;
+    font-weight: 600;
+    background-image: none;
+}
+span{
+    font-size: 35px;
+    color: hsl(158, 36%, 37%);
+}
+del{
+    font-size: 13px;
+    color: hsl(0, 0%, 57%);
+}
+button{
+    background-color: hsl(158, 36%, 37%);
+    color: rgb(233, 233, 233);
+    border: none;
+    border-radius: 10px;
+    padding: 16px 52px;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    gap: 10px;
+}
+button:hover{
+    background-color: hsl(140, 21%, 14%);
+    cursor: pointer;
+    border: none;
+}
+div.attribution{
+    background-image: none;
+    font-size: 15px;
+    width: auto;
+    margin-top: 25px;
+}
+@media screen and (max-width: 620px) {
+    body{
+        align-items: center;
+    }
+    div#main{
+        justify-self: center;
+        height: 606px;
+        width: 360px;
+    }
+    div#whole{
+        flex-direction: column;
+    }
+    section#left, div{
+        background-image: url(images/image-product-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        border-radius: 12px 12px 0px 0px;
+    }
+    section#right{
+        width: 100%;
+        border-radius: 0px 0pc 12px 12px;
+        gap: 2px;
+    }
+    p{
+        width: 266px;
+    }
+    div.attribution{
+        width: auto;
+    }
+    button{
+        text-align: center;
+        justify-content: center;
+    }
+    
+}
